@@ -553,7 +553,7 @@ a {
 }
 
 .g1_img3:hover .hover_div {
-  top: 0%;
+  top: 1%;
   z-index: 10000;
 }
 
@@ -567,7 +567,6 @@ a {
 
 .hover_div .icons i {
   padding: 20px 10px;
-
   background: linear-gradient(45deg, #8B3A62, white);
   background-clip: text;
   color: transparent;
