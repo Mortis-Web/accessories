@@ -32,12 +32,12 @@ html::-webkit-scrollbar-thumb:active {
 }
 @font-face {
   font-family: jura;
-  src: url(src/css/Jura-VariableFont_wght.ttf);
+  src: url(../../images/css/Jura-VariableFont_wght.ttf);
 }
 
 body {
   font-family: jura;
-  cursor: url("../3.jpg"), auto;
+  cursor: url("../../images/3.jpg"), auto;
   background-color: #121622;
   overflow-x: hidden;
 }
@@ -427,7 +427,7 @@ a {
 }
 
 .g1_img1 {
-  background-image: url("../WhatsApp\ Image\ 2025-04-24\ at\ 16.01.13_d94110d6.jpg");
+  background-image: url("../../images/../../images/images/WhatsApp\ Image\ 2025-04-24\ at\ 16.01.13_d94110d6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -435,7 +435,7 @@ a {
 
 .g1_img3 {
   
-  background-image: url("../WhatsApp\ Image\ 2025-04-24\ at\ 16.01.14_b31bfe99.jpg");
+  background-image: url("../../images/WhatsApp\ Image\ 2025-04-24\ at\ 16.01.14_b31bfe99.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -454,28 +454,28 @@ a {
 }
 
 .g1_sec1 .sec1_img1 {
-  background-image: url("../WhatsApp\ Image\ 2025-04-24\ at\ 16.01.14_23855c87.jpg");
+  background-image: url("../../images/WhatsApp\ Image\ 2025-04-24\ at\ 16.01.14_23855c87.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .g1_sec1 .sec1_img2 {
-  background-image: url("../WhatsApp\ Image\ 2025-04-24\ at\ 16.01.15_1c4380be.jpg");
+  background-image: url("../../images/WhatsApp\ Image\ 2025-04-24\ at\ 16.01.15_1c4380be.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .g1_sec2 .sec1_img1 {
-  background-image: url("../WhatsApp\ Image\ 2025-04-24\ at\ 16.01.28_54208bee.jpg");
+  background-image: url("../../images/WhatsApp\ Image\ 2025-04-24\ at\ 16.01.28_54208bee.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .g1_sec2 .sec1_img2 {
-  background-image: url("../WhatsApp\ Image\ 2025-04-24\ at\ 16.01.30_14192240.jpg");
+  background-image: url("../../images/WhatsApp\ Image\ 2025-04-24\ at\ 16.01.30_14192240.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -484,7 +484,7 @@ a {
 .g2 .g2_img2 {
   width: 100%;
   height: 100%;
-  background-image: url("../long.jpg");
+  background-image: url("../../images/long.jpg");
   background-repeat: no-repeat;
   background-position: calc(40%);
   background-size: cover;
