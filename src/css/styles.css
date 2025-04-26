@@ -940,9 +940,7 @@ footer .blackline span {
 }
 
 footer .blackline .bl_text {
-  padding: 20px;
-  display: flex;
-  gap: 5px;
+  padding: 20px 0px;
 }
 
 footer .bl_date {
@@ -1227,7 +1225,7 @@ footer .container .contents .subscribe .input i {
     text-align: center;
   }
   footer .blackline .bl_text {
-    display: block;
+    width:100%;
   }
 }
 @media (max-width: 450px) {
@@ -1247,4 +1245,5 @@ footer .container .contents .subscribe .input i {
   .statis .container .feature-card {
     width: 100% !important;
   }
+
 }
