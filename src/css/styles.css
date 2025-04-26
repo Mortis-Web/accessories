@@ -158,7 +158,6 @@ footer {
 }
 /* Hero Section */
 .hero {
-  height: 100dvh;
   height: 100vh;
   background-color: #090b13;
   color: #fff;
@@ -206,7 +205,7 @@ footer {
 }
 
 .hero-headline {
-  font-size: clamp(2.5rem,calc(5vw + 1rem),4rem);
+  font-size: clamp(1.5rem,calc(5vw + 1rem),4rem);
   margin-bottom: 1.5rem;
   text-shadow: 5px 5px 6px #090b13;
   max-width: 85%;
@@ -223,7 +222,7 @@ footer {
 }
 
 .hero-subheadline {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
   text-shadow: 5px 5px 6px #090b13;
 }
@@ -1158,6 +1157,11 @@ footer .container .contents .subscribe .input i {
 }
 
 @media (max-width: 650px) {
+  .hero{
+    height: 100dvh !important;
+
+  }
+  
   .hero .container {
     display: flex;
     flex-direction: column;
