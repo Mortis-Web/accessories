@@ -32,12 +32,11 @@ html::-webkit-scrollbar-thumb:active {
 }
 @font-face {
   font-family: jura;
-  src: url(../../images/css/Jura-VariableFont_wght.ttf);
+  src: url(../Jura-VariableFont_wght.ttf);
 }
 
 body {
   font-family: jura;
-  cursor: url("../../images/3.jpg"), auto;
   background-color: #121622;
   overflow-x: hidden;
 }
