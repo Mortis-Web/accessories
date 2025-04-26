@@ -205,10 +205,10 @@ footer {
 }
 
 .hero-headline {
-  font-size: clamp(1.5rem,calc(5vw + 1rem),4rem);
+  font-size: clamp(2.5rem,calc(5vw + 1rem),4rem);
   margin-bottom: 1.5rem;
   text-shadow: 5px 5px 6px #090b13;
-  max-width: 85%;
+  max-width: 75%;
   margin: auto;
 }
 
@@ -1248,6 +1248,14 @@ footer .container .contents .subscribe .input i {
   }
   .statis .container .feature-card {
     width: 100% !important;
+  }
+  
+  .hero-headline{
+    font-size: 2rem;
+    padding: 0 55px;
+  }
+  .hero-subheadline{
+    width:300px;
   }
 
 }
