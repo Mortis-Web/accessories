@@ -32,7 +32,7 @@ html::-webkit-scrollbar-thumb:active {
 }
 @font-face {
   font-family: jura;
-  src: url(../Jura-VariableFont_wght.ttf);
+  src: url(src/css/Jura-VariableFont_wght.ttf);
 }
 
 body {
