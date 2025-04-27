@@ -395,11 +395,11 @@
               <a href="https://m.me/Mohamed Emara " target="_blank">send a message</a>
             </article>
           </div>
-          <form action="">
-            <input type="text" name="text" placeholder="Your Full Name.." />
-            <input type="email" name="email" placeholder="Your Email.." />
+          <form action="" id="contact-form">
+            <input type="text" name="name" placeholder="Your Full Name.." required/>
+            <input type="email" name="email" placeholder="Your Email.." required/>
             <textarea name="message" rows="7" placeholder="Your Message.." required></textarea>
-            <div class="button"><a href="#portfolio" class=" hero-cta">Send Now!</a></div>
+            <div class="button"><button type="submit" class=" hero-cta">Send Now!</button></div>
         </form>
         </div>
       </section>
@@ -421,7 +421,7 @@
                         <!--contact info-->
                         <h2>Contact Informations</h2>
                         <p> <i class="fa-solid fa-envelope "></i><a href="mailto:zera3a@gmail.com"
-                            target="_blank">memaraaa123@gmail.com</a></p>
+                            target="_blank">projectreciever91@gmail.com</a></p>
                         <p> <i class="fa-solid fa-location-dot "></i></i><a target="_blank"
                                 href="https://www.google.com/maps/place/%D9%83%D9%84%D9%8A%D8%A9+%D8%A7%D9%84%D8%B2%D8%B1%D8%A7%D8%B9%D8%A9+%D8%AC%D8%A7%D9%85%D8%B9%D8%A9+%D8%AF%D9%85%D9%86%D9%87%D9%88%D8%B1%E2%80%AD/@31.038079,30.434602,13z/data=!4m6!3m5!1s0x14f66c793a6568f7:0x4071775ab450d881!8m2!3d31.0380794!4d30.4346016!16s%2Fg%2F11c2np01dg?hl=ar&entry=ttu">
                                 Egypt, Beheira, Damanhour
@@ -478,6 +478,25 @@
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 </script>
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("ngLjHaSK8D7NvI6kl");     })();
+
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      emailjs.send("service_e8mkrqf", "template_klpboni", {
+        name: this.name.value,
+        email: this.email.value,
+        message: this.message.value,
+      }).then(function(response) {
+        alert("Message sent!");
+      }, function(error) {
+        alert("FAILED: " + JSON.stringify(error));
+      });
+    });
+  </script>
 <script>
     new Typed("#typed", {
       strings: ["Necklace", "Bracelet", "Ring"],
