@@ -821,6 +821,9 @@ color:gray;
   overflow-y: auto;
   field-sizing: content;
 }
+textarea{
+  height:200px;
+}
 textarea::-webkit-scrollbar {
   width: 12px;
 }
