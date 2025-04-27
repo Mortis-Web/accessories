@@ -525,7 +525,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   text-align: center;
 }
 .hover_div h3{
