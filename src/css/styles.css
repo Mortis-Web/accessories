@@ -1035,20 +1035,21 @@ footer .container .contents .subscribe .input i {
 
 /* =================NAV BUTTON================ */
 .go-top-btn {
-  position: fixed;
-  bottom: 35px;
-  right: 35px;
-  cursor: pointer;
-  color: #8B3A62;
-  transition: all 0.4s;
-  z-index: 1;
-  display: none;
-  transform: scale(1.4);
-}
-.btn-anim {
-  animation: btn 0.5s linear;
-}
-/* =====================MEDIA CONTAINER==================== */
+    position: fixed;
+    right: 35px;
+    bottom: -100%;
+    cursor: pointer;
+    color: #8B3A62;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-out;
+    will-change:bottom;
+    font-size: 1.5rem;
+  }
+  
+  /* =====================MEDIA CONTAINER==================== */
 @media (min-width: 768px) {
   .container {
     width: 750px;
