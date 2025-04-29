@@ -1227,7 +1227,7 @@ footer .container .contents .subscribe .input i {
     align-items: center;
   }
   .statis .container .feature-card {
-    width: 60% !important;
+    width: max(60%,260px);
     rotate: 0deg;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -1270,9 +1270,9 @@ footer .container .contents .subscribe .input i {
   .swiper {
     width: 90%;
   }
-  .statis .container .feature-card {
+/*   .statis .container .feature-card {
     width: 100% !important;
-  }
+  } */
   
   .hero-headline{
     font-size: 2rem;
