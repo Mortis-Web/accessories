@@ -1134,7 +1134,7 @@ footer .container .contents .subscribe .input i {
     
   
   .contactOption{
-    width: max(50%,300px);
+    width: max(50%,280px);
     margin: auto;
   }
 
@@ -1184,6 +1184,9 @@ footer .container .contents .subscribe .input i {
   }
      .swiper {
     padding:5rem 0;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom:10%;
   }
   
   .clientReview {
