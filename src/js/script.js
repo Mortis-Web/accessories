@@ -5,11 +5,11 @@ const goTopBtn = document.querySelector(".go-top-btn");
 window.addEventListener("scroll", checkHeight);
 
 function checkHeight() {
-  if (window.scrollY > 200) {
-    goTopBtn.style.display = "flex";
-    goTopBtn.classList.add("btn-anim");
-  } else {
-    goTopBtn.style.display = "none";
+    if (window.scrollY > 200) {
+    goTopBtn.style.bottom= "35px"
+  } 
+    else {
+    goTopBtn.style.bottom= "-100%"
   }
 }
 
