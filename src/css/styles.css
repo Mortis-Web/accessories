@@ -552,11 +552,8 @@ transition: all 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .hover_div p {
   color: whitesmoke;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  margin:auto;
+  width:80%;
 }
 .g1_img1:hover .hover_div {
   top: 1%;
@@ -1271,10 +1268,9 @@ footer .container .contents .subscribe .input i {
   .swiper {
     width: 90%;
   }
-/*   .statis .container .feature-card {
-    width: 100% !important;
-  } */
-  
+  .hover_div p {
+    width:100%;
+  }
   .hero-headline{
     font-size: 2rem;
     padding: 0 4rem;
