@@ -1218,6 +1218,8 @@ footer .container .contents .subscribe .input i {
         height: 350px;
         margin: auto;
         justify-content: center;  
+      text-align:center;
+    
   }
   .statis .container {
     flex-direction: column;
