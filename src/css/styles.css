@@ -95,9 +95,7 @@ body {
 }
 
 .nav-link:hover {
-  background: linear-gradient(90deg, #8B3A62, white);
-  background-clip: text;
-  color: transparent;
+  color: #8B3A62;
   font-weight: bold;
 }
 #blue-hov::after {
