@@ -551,7 +551,8 @@ transition: all 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   padding: 1rem;
 }
 .hover_div p {
-  color: whitesmoke;
+ color: white;
+  font-weight:bold;
   margin:auto;
   width:80%;
 }
@@ -762,15 +763,32 @@ transition: all 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   user-select: none;
 }
 
-.clientReview {
-  font-weight: 300;
-  display: block;
-  width: 80%;
-  color: gray;
-  font-size: 1.2rem;
-  margin: 1rem auto 0;
-}
-
+  .clientReview {
+    font-weight: 300;
+    width: 80%;
+    color: gray;
+    font-size: 1.2rem;
+    margin: 1rem auto 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+  } 
+  .clientReview::-webkit-scrollbar {
+    width: 10px;
+  }
+  .clientReview::-webkit-scrollbar-track {
+    background:#fff;
+    border-radius: 4px;
+    border-left: 1px solid #fff;
+  }
+  
+  .clientReview::-webkit-scrollbar-thumb {
+    background-color: #8B3A62;
+    border-radius: 4px;
+  }
 /* newsletter */
 #newsletter .container {
   display: grid;
