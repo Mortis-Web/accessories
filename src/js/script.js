@@ -85,3 +85,29 @@ document.querySelectorAll('.feature-card').forEach(card => {
             }, 300);
         });
     });
+
+// ====================================================
+
+
+
+   (function() {
+      // Initialize EmailJS with your public key
+      emailjs.init("ngLjHaSK8D7NvI6kl"); // Replace with your actual public key
+   })();
+
+   // Event listener for form submission
+   document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent default form submission
+
+      // Send the email
+      emailjs.send("service_e8mkrqf", "template_klpboni", {
+         name: this.name.value,       // 'name' field from the form
+         email: this.email.value,     // 'email' field from the form
+         message: this.message.value  // 'message' field from the form
+      }).then(function(response) {
+         alert("Message sent!");
+      }, function(error) {
+         alert("FAILED: " + JSON.stringify(error));
+      });
+   });
+
