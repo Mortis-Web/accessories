@@ -90,24 +90,30 @@ document.querySelectorAll('.feature-card').forEach(card => {
 
 
 
-   (function() {
-      // Initialize EmailJS with your public key
-      emailjs.init("ngLjHaSK8D7NvI6kl"); // Replace with your actual public key
-   })();
+    (function() {
+    // Initialize EmailJS
+    emailjs.init("ngLjHaSK8D7NvI6kl");
+  })();
 
-   // Event listener for form submission
-   document.getElementById('contact-form').addEventListener('submit', function(e) {
-      e.preventDefault(); // Prevent default form submission
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
 
-      // Send the email
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = form.elements["name"].value;
+      const email = form.elements["email"].value;
+      const message = form.elements["message"].value;
+
       emailjs.send("service_e8mkrqf", "template_klpboni", {
-         name: this.name.value,       // 'name' field from the form
-         email: this.email.value,     // 'email' field from the form
-         message: this.message.value  // 'message' field from the form
-      }).then(function(response) {
-         alert("Message sent!");
-      }, function(error) {
-         alert("FAILED: " + JSON.stringify(error));
+        name: name,
+        email: email,
+        message: message
+      }).then(function (response) {
+        alert("Message sent!");
+        form.reset();
+      }, function (error) {
+        alert("FAILED: " + JSON.stringify(error));
       });
-   });
-
+    });
+  });
