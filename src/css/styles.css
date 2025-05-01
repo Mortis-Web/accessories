@@ -230,6 +230,8 @@ footer {
 
 .hero-cta {
   background: transparent;
+  cursor:pointer;
+  border:none;
   padding: 10px 50px;
   text-decoration: none;
   border-radius: 5px;
