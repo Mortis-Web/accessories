@@ -1249,7 +1249,7 @@ footer .container .contents .subscribe .input i {
     rotate: 0deg;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
-    transition: 0.8s, 0.4s border-radius;
+/*     transition: 0.8s, 0.4s border-radius; */
   }
   .statis .container .feature-card:hover {
     border-radius: 0;
