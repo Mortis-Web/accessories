@@ -1036,6 +1036,8 @@ footer .container .contents .subscribe .input .submit {
   letter-spacing: 1px;
   font-size: 16px;
   font-style: italic;
+  font-weight: bold;
+    text-transform: capitalize;
 }
 
 footer .container .contents .subscribe .input i {
