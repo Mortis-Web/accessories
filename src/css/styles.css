@@ -1051,7 +1051,7 @@ footer .container .contents .subscribe .input i {
 /* =================NAV BUTTON================ */
 .go-top-btn {
     position: fixed;
-    right: 35px;
+    right: 15px;
     bottom: -100%;
     cursor: pointer;
     color: #8B3A62;
