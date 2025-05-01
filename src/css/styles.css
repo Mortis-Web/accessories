@@ -568,11 +568,11 @@ transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .g2_img2 .hover_div {
-      height: calc(75% - 5px);
+      height: calc(60% - 5px);
 }
 .g2_img2:hover .hover_div {
   z-index: 10000;
-  top: calc(25% + 5px);
+  top: calc(40% + 5px);
 }
 
 .hover_div .icons i {
