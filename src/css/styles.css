@@ -39,6 +39,7 @@ body {
   font-family: jura;
   background-color: #121622;
   overflow-x: hidden;
+      cursor: url('./images/Mincursor.png') 0 0, auto;
 }
 .container {
   margin: auto;
@@ -232,7 +233,7 @@ footer {
 
 .hero-cta {
   background: transparent;
-  cursor:pointer;
+  cursor: url('./images/pink.png') 0 0, auto;
   border:none;
   padding: 10px 50px;
   text-decoration: none;
@@ -284,6 +285,8 @@ footer {
 a {
   color: white;
   text-decoration: none;
+  cursor: url('./images/pink.png') 0 0, auto;
+  
 }
 /* Features Section */
 .features {
@@ -1038,7 +1041,7 @@ footer .container .contents .subscribe .input .email:focus {
   outline: none;
 }
 footer .container .contents .subscribe .input .submit {
-  cursor: pointer;
+      cursor: url('./images/pink.png') 0 0, auto;
   background-color: #8B3A62;
   position: relative;
   border: none;
@@ -1052,7 +1055,7 @@ footer .container .contents .subscribe .input .submit {
 }
 
 footer .container .contents .subscribe .input i {
-  cursor: pointer;
+      cursor: url('./images/pink.png') 0 0, auto;
   color: white;
   position: absolute;
   right: 0;
@@ -1064,8 +1067,8 @@ footer .container .contents .subscribe .input i {
     position: fixed;
     right: 15px;
     bottom: -100%;
-    cursor: pointer;
-    color: #8B3A62;
+        cursor: url('./images/pink.png') 0 0, auto;
+  color: #8B3A62;
     z-index: 100;
     display: flex;
     justify-content: center;
