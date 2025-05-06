@@ -204,7 +204,7 @@ footer {
 }
 
 .hero-headline {
-  font-size: clamp(2.2rem,calc(5vw + 1rem),4rem);
+  font-size: clamp(2.175rem,calc(5vw + 1rem),4rem);
   margin-bottom: 1.5rem;
   text-shadow: 5px 5px 6px #090b13;
   max-width: 75%;
