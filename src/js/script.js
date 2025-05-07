@@ -46,11 +46,12 @@ function startCount(el) {
 
 // 3d effect ======================================
 
-document.querySelectorAll('.feature-card').forEach(card => {
+document.querySelectorAll('.feature-wrapper').forEach(wrapper => {
+        const card = wrapper.querySelector('.feature-card');
         const shine = card.querySelector('.shine');
 
-        card.addEventListener('mousemove', (e) => {
-            const { left, top, width, height } = card.getBoundingClientRect();
+        wrapper.addEventListener('mousemove', (e) => {
+            const { left, top, width, height } = wrapper.getBoundingClientRect();
             const x = e.clientX - left; // X position relative to card
             const y = e.clientY - top;  // Y position relative to card
 
@@ -74,7 +75,7 @@ document.querySelectorAll('.feature-card').forEach(card => {
             }
         });
 
-        card.addEventListener('mouseleave', () => {
+        wrapper.addEventListener('mouseleave', () => {
             card.style.transform = `rotateX(0deg) rotateY(0deg)`; // Reset rotation
             card.style.transition = 'transform 0.3s ease'; // Smooth transition on leave
             if (shine) {
