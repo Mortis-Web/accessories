@@ -575,7 +575,7 @@ transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .g1_img3:hover .hover_div {
-  top: 0%;
+  top: 0.25%;
   z-index: 10000;
 }
 
