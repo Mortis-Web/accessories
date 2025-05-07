@@ -344,11 +344,17 @@ a {
 }
 .feature-holder {
   display: flex;
-  perspective: 800px;
+/*   perspective: 800px; */
   flex-wrap: wrap;
   max-width: 570px;
   gap: 40px;
 }
+.feature-wrapper{
+    width:100%;
+    height:100%;
+    perspective: 800px;
+  }
+
 .features .feature-card {
   padding: 15px;
   width: 265px;
@@ -598,7 +604,7 @@ transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
   justify-content: center;
   height: 100%;
   flex-wrap: wrap;
-  perspective: 800px;
+/*   perspective: 800px; */
 }
 .statis .container span {
   font-size: 55px;
