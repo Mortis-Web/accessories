@@ -30,13 +30,22 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-thumb:active {
   cursor: grabbing;
 }
-@font-face {
+/* @font-face {
   font-family: jura;
   src: url(Jura-VariableFont_wght.ttf);
 }
+ */
+@font-face {
+    font-family: jura;
+    src: url('jura-variablefont_wght-webfont.woff2') format('woff2'),
+         url('jura-variablefont_wght-webfont.woff') format('woff');
+    font-weight: 100 900;
+    font-style: normal;
+      font-display: swap;
+}
 
 body {
-  font-family: jura;
+  font-family: jura, sans-serif;
   background-color: #121622;
   overflow-x: hidden;
   cursor: url('../../images/Mincursor.png') 0 0, auto;
