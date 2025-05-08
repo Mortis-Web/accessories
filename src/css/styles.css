@@ -811,6 +811,7 @@ transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
     overflow-y: auto;
     overflow-x: hidden;
     text-overflow: ellipsis;
+    padding: 0 10px;
   } 
   .clientReview::-webkit-scrollbar {
     width: 10px;
