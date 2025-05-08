@@ -118,3 +118,16 @@ document.querySelectorAll('.feature-wrapper').forEach(wrapper => {
       });
     });
   });
+// =================
+
+
+// Directly initialize Typed.js
+new Typed("#typed", {
+  strings: ["Necklace", "Bracelet", "Watches", "Rings💍"],
+  typeSpeed: 100,
+  backSpeed: 140,
+  loop: true
+});
+// ===================
+
+
