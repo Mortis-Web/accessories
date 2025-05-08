@@ -316,6 +316,9 @@ a {
   display: flex;
   padding: 100px 0;
 }
+.features p{
+  font-weight:600;
+}
 .features .container {
   display: flex;
   color: white;
@@ -331,7 +334,7 @@ a {
 
 .features .container h1 {
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 35px;
 }
 .features .container .feature-card h2 {
