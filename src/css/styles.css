@@ -208,7 +208,7 @@ footer {
   font-size: clamp(2.175rem,calc(5vw + 1rem),4rem);
   margin-bottom: 1.5rem;
   text-shadow: 5px 5px 6px #090b13;
-  max-width: 75%;
+  max-width: 97.5%;
   margin: auto;
 }
 
@@ -220,6 +220,17 @@ footer {
 .typed-cursor{
   color: #c13584;
   font-weight: bold;
+}
+  .typed-text {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  .typed-holder{
+    display: inline-block;
+    text-align: start;
+    min-width: 250px;
+    line-height: 1;
 }
 
 .hero-subheadline {
@@ -1217,6 +1228,10 @@ footer .container .contents .subscribe .input i {
     height: 100dvh !important;
 
   }
+   .typed-holder{
+      min-width:100px;
+    }
+
      .swiper {
     padding:5rem 0;
   }
