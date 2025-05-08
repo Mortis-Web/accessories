@@ -350,8 +350,8 @@ a {
   gap: 40px;
 }
 .feature-wrapper{
-/*     width:100%;
-    height:100%; */
+/*     width:100%; */
+    height:fit-content;
     perspective: 800px;
   }
 
@@ -610,10 +610,14 @@ transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
 .statis .container span {
   font-size: 55px;
 }
+  .statis .feature-wrapper{
+    rotate: 45deg;
+    margin: 0;
+  }
 
 .statis .container .feature-card {
   background-color: #090b13;
-  rotate: 45deg;
+/*   rotate: 45deg; */
   height: 260px;
   width: 260px;
   position: relative;
@@ -1242,13 +1246,17 @@ footer .container .contents .subscribe .input i {
     flex-direction: column;
     text-align: center;
   }
+  
+  .feature-holder .feature-wrapper{
+            width: min(400px, 90%);
+  }
+  
   .feature-holder .feature-card {
    display: flex;
         flex-direction: column;
         align-items: center;
-        width: min(400px, 90%);
+        width:100%;
         height: 350px;
-        margin: auto;
         justify-content: center;  
       text-align:center;
     
@@ -1258,12 +1266,15 @@ footer .container .contents .subscribe .input i {
     gap: 40px;
     align-items: center;
   }
-  .statis .container .feature-card {
-    width: max(65%,265px);
+  .statis .feature-wrapper{
+       width: max(65%,265px);
     rotate: 0deg;
+  }
+  .statis .container .feature-card {
+    width:100%;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
-/*     transition: 0.8s, 0.4s border-radius; */
+/*     transition: border-radius 0.25s; */ 
   }
   .inner{
         rotate: 0deg;
