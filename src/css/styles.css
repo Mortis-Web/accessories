@@ -424,9 +424,8 @@ box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
   align-items: center;
   gap: 5px;
   width: 100%;
-  height: clamp(350px,calc(75vh + 20rem),640px);
+  height: 768px;
   background-color: #090b13;
-  scroll-snap-type: y mandatory;
 }
 
 .gallary .g1,
@@ -526,8 +525,6 @@ box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
 
 .gallary div {
   overflow: hidden !important;
-   scroll-snap-align: start;
-  
 }
 
 .gallary .g1 .sec1_img1:hover,
@@ -547,7 +544,7 @@ box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
   top: 100%;
   backdrop-filter: blur(5px);
 transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
-  z-index: -10000;
+/*   z-index: -10000; */
   display: flex;
   color: #8B3A62;
   justify-content: center;
@@ -555,6 +552,7 @@ transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
   flex-direction: column;
   gap: 10px;
   text-align: center;
+  pointer-events: none; 
 }
 .hover_div h3{
   box-shadow: 0 0 5px #e1306c, 0 0 15px #e1306c, 0 0 25px #e1306c, 0 0 100px #e1306c;
@@ -571,7 +569,7 @@ transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .g1_img1:hover .hover_div {
   top: 0.25%;
-  z-index: 10000;
+/*   z-index: 10000; */
 }
 .hover_div a {
   width: 20px;
@@ -579,14 +577,14 @@ transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
 
 .g1_img3:hover .hover_div {
   top: 0.25%;
-  z-index: 10000;
+/*   z-index: 10000; */
 }
 
 .g2_img2 .hover_div {
       height: calc(60%);
 }
 .g2_img2:hover .hover_div {
-  z-index: 10000;
+/*   z-index: 10000; */
   top: calc(40%);
 }
 
@@ -1139,10 +1137,16 @@ footer .container .contents .subscribe .input i {
 
     .gallary{
       flex-wrap: wrap;
-      overflow-y: auto;
-/*       height: 450px; */
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      overscroll-behavior: contain;
+      max-height: 450px;
       scroll-behavior: smooth;
-      scrollbar-width: 4px;
+      user-select: none;
+      touch-action: pan-y;
+      scrollbar-gutter: stable;
+      -webkit-overflow-scrolling: touch;
+
     }
     .gallary::-webkit-scrollbar {
       width: 12px;
@@ -1176,6 +1180,9 @@ footer .container .contents .subscribe .input i {
   .nav-item {
     margin: 0;
   }
+.gallary{
+  flex-wrap: wrap;
+}
   .gallary .g1,
   .g2,
   .g3 {
