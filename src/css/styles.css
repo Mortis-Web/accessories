@@ -46,6 +46,11 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+p{
+  text-wrap: balance;
+}
+
 /* Header */
 .header {
   position: fixed;
