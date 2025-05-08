@@ -1,15 +1,11 @@
-// =============NAV BUTTON===========
-
+// ============= GO TO TOP BUTTON ============
 const goTopBtn = document.querySelector(".go-top-btn");
 
-window.addEventListener("scroll", checkHeight);
-
 function checkHeight() {
-    if (window.scrollY > 200) {
-    goTopBtn.style.bottom= "35px"
-  } 
-    else {
-    goTopBtn.style.bottom= "-100%"
+  if (window.scrollY > 200) {
+    goTopBtn.style.bottom = "35px";
+  } else {
+    goTopBtn.style.bottom = "-100%";
   }
 }
 
@@ -20,19 +16,19 @@ goTopBtn.addEventListener("click", () => {
   });
 });
 
-// ==================STATIS COUNTER===================
+// ============= STAT COUNTER =============
 let nums = document.querySelectorAll(".nums .num");
 let section = document.querySelector(".three");
 let started = false;
 
-window.onscroll = function () {
+function handleCounterScroll() {
   if (window.scrollY + 200 >= section.offsetTop - 100) {
     if (!started) {
       nums.forEach((num) => startCount(num));
+      started = true;
     }
-    started = true;
   }
-};
+}
 
 function startCount(el) {
   let goal = el.dataset.goal;
@@ -44,61 +40,60 @@ function startCount(el) {
   }, 2000 / goal);
 }
 
-// 3d effect ======================================
+// ============= DEBOUNCED SCROLL LISTENER ============
+let scrollTimeout;
+window.addEventListener("scroll", () => {
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => {
+    checkHeight();
+    handleCounterScroll();
+  }, 50);
+});
 
-document.querySelectorAll('.feature-wrapper').forEach(wrapper => {
-        const card = wrapper.querySelector('.feature-card');
-        const shine = card.querySelector('.shine');
+// ============= 3D CARD EFFECT =============
+document.querySelectorAll(".feature-wrapper").forEach((wrapper) => {
+  const card = wrapper.querySelector(".feature-card");
+  const shine = card.querySelector(".shine");
 
-        wrapper.addEventListener('mousemove', (e) => {
-            const { left, top, width, height } = wrapper.getBoundingClientRect();
-            const x = e.clientX - left; // X position relative to card
-            const y = e.clientY - top;  // Y position relative to card
+  wrapper.addEventListener("mousemove", (e) => {
+    const { left, top, width, height } = wrapper.getBoundingClientRect();
+    const x = e.clientX - left;
+    const y = e.clientY - top;
 
-            // Normalize mouse position to -0.5 to +0.5
-            const normalizedX = (x / width) - 0.5; 
-            const normalizedY = (y / height) - 0.5;
+    const normalizedX = x / width - 0.5;
+    const normalizedY = y / height - 0.5;
 
-            // Apply rotation based on mouse position with a clamp of -35deg to 35deg
-            const rotateX = Math.max(Math.min(normalizedY * -35, 35), -35); // Vertical rotation
-            const rotateY = Math.max(Math.min(normalizedX * 35, 35), -35); // Horizontal rotation
+    const rotateX = Math.max(Math.min(normalizedY * -35, 35), -35);
+    const rotateY = Math.max(Math.min(normalizedX * 35, 35), -35);
 
-            // Apply the calculated rotation to the card
-            card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 
-            // Create shine effect at mouse position
-            const percentX = (x / width) * 100; // X position percentage
-            const percentY = (y / height) * 100; // Y position percentage
-            if (shine) {
-                shine.style.background = `radial-gradient(circle at ${percentX}% ${percentY}%, rgba(139, 58, 98, 0.5), transparent 10%)`;
-                shine.style.opacity = 1; // Show the shine effect
-            }
-        });
+    const percentX = (x / width) * 100;
+    const percentY = (y / height) * 100;
+    if (shine) {
+      shine.style.background = `radial-gradient(circle at ${percentX}% ${percentY}%, rgba(139, 58, 98, 0.5), transparent 10%)`;
+      shine.style.opacity = 1;
+    }
+  });
 
-        wrapper.addEventListener('mouseleave', () => {
-            card.style.transform = `rotateX(0deg) rotateY(0deg)`; // Reset rotation
-            card.style.transition = 'transform 0.3s ease'; // Smooth transition on leave
-            if (shine) {
-                shine.style.opacity = 0; // Hide the shine effect
-            }
-            setTimeout(() => {
-                card.style.transition = ''; // Remove the transition after it's done to make hover instant
-            }, 300);
-        });
-    });
+  wrapper.addEventListener("mouseleave", () => {
+    card.style.transform = `rotateX(0deg) rotateY(0deg)`;
+    card.style.transition = "transform 0.3s ease";
+    if (shine) {
+      shine.style.opacity = 0;
+    }
+    setTimeout(() => {
+      card.style.transition = "";
+    }, 300);
+  });
+});
 
-// ====================================================
+// ============= EMAILJS & FORM =============
+document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("ngLjHaSK8D7NvI6kl");
 
-
-
-    (function() {
-    // Initialize EmailJS
-    emailjs.init("ngLjHaSK8D7NvI6kl");
-  })();
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contact-form");
-
+  const form = document.getElementById("contact-form");
+  if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
@@ -106,32 +101,39 @@ document.querySelectorAll('.feature-wrapper').forEach(wrapper => {
       const email = form.elements["email"].value;
       const message = form.elements["message"].value;
 
-      emailjs.send("service_e8mkrqf", "template_klpboni", {
-        name: name,
-        email: email,
-        message: message
-      }).then(function (response) {
-        alert("Message sent!");
-        form.reset();
-      }, function (error) {
-        alert("FAILED: " + JSON.stringify(error));
-      });
+      emailjs
+        .send("service_e8mkrqf", "template_klpboni", {
+          name: name,
+          email: email,
+          message: message,
+        })
+        .then(
+          function () {
+            alert("Message sent!");
+            form.reset();
+          },
+          function (error) {
+            alert("FAILED: " + JSON.stringify(error));
+          }
+        );
     });
-  });
-// =================
+  }
 
+  // ============= TYPED.JS =============
+  const typedEl = document.querySelector("#typed");
+  if (typedEl) {
+    new Typed("#typed", {
+      strings: ["Necklace", "Bracelet", "Watches", "Rings💍"],
+      typeSpeed: 100,
+      backSpeed: 140,
+      loop: true,
+    });
+  }
 
-// Directly initialize Typed.js
-new Typed("#typed", {
-  strings: ["Necklace", "Bracelet", "Watches", "Rings💍"],
-  typeSpeed: 100,
-  backSpeed: 140,
-  loop: true
-});
-// ===================
- const swiper = new Swiper('.mySwiper', {
+  // ============= SWIPER.JS =============
+  const swiper = new Swiper(".mySwiper", {
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: true,
     },
     keyboard: {
@@ -143,6 +145,4 @@ new Typed("#typed", {
     },
     loop: true,
   });
-
-
-
+});
