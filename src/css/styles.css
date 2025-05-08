@@ -537,6 +537,7 @@ box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
 
 .gallary div {
   overflow: hidden !important;
+  scroll-snap-align: start;
 }
 
 .gallary .g1 .sec1_img1:hover,
