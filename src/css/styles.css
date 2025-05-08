@@ -321,7 +321,8 @@ a {
   z-index: 1000;
   background-color: #8B3A62;
   left: 0;
-  bottom: -5px;
+  bottom: -7.5px;
+  border-radius: 8px;
 }
 .features p {
   color: grey;
