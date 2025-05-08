@@ -1249,6 +1249,8 @@ footer .container .contents .subscribe .input i {
   
   .feature-holder .feature-wrapper{
             width: min(400px, 90%);
+  margin:auto;
+    
   }
   
   .feature-holder .feature-card {
@@ -1274,7 +1276,7 @@ footer .container .contents .subscribe .input i {
     width:100%;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
-/*     transition: border-radius 0.25s; */ 
+    transition: border-radius 0.25s; 
   }
   .inner{
         rotate: 0deg;
