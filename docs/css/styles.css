@@ -43,7 +43,7 @@ body {
   font-family: "jura", sans-serif;
   background-color: #121622;
   overflow-x: hidden;
-  cursor: url('../../images/Mincursor.png') 0 0, auto;
+  cursor: url('../images/Mincursor.png') 0 0, auto;
 }
 .container {
   margin: auto;
