@@ -586,7 +586,7 @@ transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .hover_div h3{
   box-shadow: 0 0 5px #e1306c, 0 0 15px #e1306c, 0 0 25px #e1306c, 0 0 100px #e1306c;
-  background:linear-gradient(90deg,#c13584,rgba(255,255,255,0.75),#c13584);
+  background:linear-gradient(in lch 45deg,#c13584,rgba(255,255,255,0.75),#c13584);
   border-radius: 2rem;
   font-weight: 700;
   padding: 1rem;
