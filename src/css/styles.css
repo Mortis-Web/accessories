@@ -763,7 +763,7 @@ transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
   width: 50%;
   max-width: 666px;
   height: auto;
-  padding: 10rem 0;
+  padding: 10rem 0 !important;
 }
 
 .swiper-slide {
@@ -1252,7 +1252,7 @@ footer .container .contents .subscribe .input i {
     }
 
      .swiper {
-    padding:5rem 0;
+    padding:5rem 0 !important;
   }
   .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
     bottom:10%;
