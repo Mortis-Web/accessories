@@ -30,11 +30,6 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-thumb:active {
   cursor: grabbing;
 }
-/* @font-face {
-  font-family: jura;
-  src: url(Jura-VariableFont_wght.ttf);
-}
- */
 @font-face {
     font-family: "jura";
     src: url('jura-variablefont_wght-webfont.woff2') format('woff2'),
@@ -226,9 +221,7 @@ footer {
   margin: auto;
 }
 
-.hero-headline .span{
-  margin-left: 0.75rem;
-}
+
 
  .span,
 .typed-cursor{
@@ -245,6 +238,7 @@ footer {
     text-align: start;
     min-width: 250px;
     line-height: 1;
+    margin-left: 0.75rem;
 }
 
 .hero-subheadline {
