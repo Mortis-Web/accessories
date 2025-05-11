@@ -790,12 +790,13 @@ transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1);
   margin: 0 auto;
   border: 4px solid #8B3A62;
 
+}
   img{
     object-fit: cover;
   
   width: 100%;
   }
-}
+
 .pink img{
   filter: sepia(1) hue-rotate(180deg) saturate(1000%) brightness(0.8);  
 
