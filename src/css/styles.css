@@ -30,11 +30,6 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-thumb:active {
   cursor: grabbing;
 }
-/* @font-face {
-  font-family: jura;
-  src: url(Jura-VariableFont_wght.ttf);
-}
- */
 @font-face {
     font-family: "jura";
     src: url('jura-variablefont_wght-webfont.woff2') format('woff2'),
@@ -65,7 +60,6 @@ p{
   position: fixed;
   top: 0;
   width: 100%;
-/*   background: linear-gradient(45deg, #090b13, transparent); */
   z-index: 1000;
   backdrop-filter: blur(5px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -226,10 +220,6 @@ footer {
   margin: auto;
 }
 
-/* .hero-headline .span{
-  margin-left: 0.75rem;
-} */
-
  .span,
 .typed-cursor{
   color: #c13584;
@@ -245,6 +235,7 @@ footer {
     text-align: start;
     min-width: 250px;
     line-height: 1;
+      margin-left: 0.75rem;
 }
 
 .hero-subheadline {
