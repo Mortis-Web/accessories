@@ -48,7 +48,7 @@ body {
   font-family: "jura", sans-serif;
   background-color: #121622;
   overflow-x: hidden;
-  cursor: url('../../images/Mincursor.png') 0 0, auto;
+  cursor: url('../images/Mincursor.png') 0 0, auto;
 }
 .container {
   margin: auto;
@@ -258,7 +258,7 @@ footer {
 
 .hero-cta {
   background: transparent;
-  cursor: url('../../images/pink.png') 0 0, auto;  border:none;
+  cursor: url('../images/pink.png') 0 0, auto;  border:none;
   padding: 10px 50px;
   text-decoration: none;
   border-radius: 5px;
@@ -309,7 +309,7 @@ footer {
 a {
   color: white;
   text-decoration: none;
-  cursor: url('../../images/pink.png') 0 0, auto;  
+  cursor: url('../images/pink.png') 0 0, auto;  
 }
 /* Features Section */
 .features {
@@ -479,7 +479,7 @@ box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 .g1_img1 {
-  background-image: url("../../images/WhatsApp\ Image\ 2025-04-24\ at\ 16.01.13_d94110d6.jpg");
+  background-image: url("../images/WhatsApp\ Image\ 2025-04-24\ at\ 16.01.13_d94110d6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -487,7 +487,7 @@ box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
 
 .g1_img3 {
   
-  background-image: url("../../images/WhatsApp\ Image\ 2025-04-24\ at\ 16.01.14_b31bfe99.jpg");
+  background-image: url("../images/WhatsApp\ Image\ 2025-04-24\ at\ 16.01.14_b31bfe99.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -506,28 +506,28 @@ box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
 }
 
 .g1_sec1 .sec1_img1 {
-  background-image: url("../../images/WhatsApp\ Image\ 2025-04-24\ at\ 16.01.14_23855c87.jpg");
+  background-image: url("../images/WhatsApp\ Image\ 2025-04-24\ at\ 16.01.14_23855c87.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .g1_sec1 .sec1_img2 {
-  background-image: url("../../images/WhatsApp\ Image\ 2025-04-24\ at\ 16.01.15_1c4380be.jpg");
+  background-image: url("../images/WhatsApp\ Image\ 2025-04-24\ at\ 16.01.15_1c4380be.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .g1_sec2 .sec1_img1 {
-  background-image: url("../../images/WhatsApp\ Image\ 2025-04-24\ at\ 16.01.28_54208bee.jpg");
+  background-image: url("../images/WhatsApp\ Image\ 2025-04-24\ at\ 16.01.28_54208bee.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .g1_sec2 .sec1_img2 {
-  background-image: url("../../images/WhatsApp\ Image\ 2025-04-24\ at\ 16.01.30_14192240.jpg");
+  background-image: url("../images/WhatsApp\ Image\ 2025-04-24\ at\ 16.01.30_14192240.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -536,7 +536,7 @@ box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
 .g2 .g2_img2 {
   width: 100%;
   height: 100%;
-  background-image: url("../../images/long.jpg");
+  background-image: url("../images/long.jpg");
   background-repeat: no-repeat;
   background-position: calc(40%);
   background-size: cover;
@@ -1073,7 +1073,7 @@ footer .container .contents .subscribe .input .email:focus {
   outline: none;
 }
 footer .container .contents .subscribe .input .submit {
-      cursor: url('../../images/pink.png') 0 0, auto;  background-color: #8B3A62;
+      cursor: url('../images/pink.png') 0 0, auto;  background-color: #8B3A62;
   position: relative;
   border: none;
   color: white;
@@ -1086,7 +1086,7 @@ footer .container .contents .subscribe .input .submit {
 }
 
 footer .container .contents .subscribe .input i {
-      cursor: url('../../images/pink.png') 0 0, auto;  color: white;
+      cursor: url('../images/pink.png') 0 0, auto;  color: white;
   position: absolute;
   right: 0;
   padding: 15px;
@@ -1097,7 +1097,7 @@ footer .container .contents .subscribe .input i {
     position: fixed;
     right: 15px;
     bottom: -100%;
-        cursor: url('../../images/pink.png') 0 0, auto;  color: #8B3A62;
+        cursor: url('../images/pink.png') 0 0, auto;  color: #8B3A62;
     z-index: 100;
     display: flex;
     justify-content: center;
